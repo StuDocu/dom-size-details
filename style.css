@@ -1,0 +1,15 @@
+.mouse-visited {
+  background-clip: #bcd5eb !important;
+  outline: 1px dashed #e9af6e !important;
+}
+
+#dom-info-details {
+  z-index: 99999;
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #fdf6e3;
+  color: #657b83;
+  position: fixed;
+  white-space: pre-wrap;
+}

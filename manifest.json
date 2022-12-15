@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "DSD",
+  "version": "1.0.0",
+  "description": "DOM size details",
+  "author": "Siamak",
+  "icons": {
+    "16": "icons/16-d.png",
+    "32": "icons/32-d.png",
+    "48": "icons/48-d.png",
+    "128": "icons/128-d.png"
+  },
+  "action": {
+    "default_title": "DOM size details"
+  },
+  "permissions": ["activeTab", "scripting", "declarativeContent"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"]
+    }
+  ]
+}
